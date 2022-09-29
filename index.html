@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PH Scale</title>
+    <style>
+        #div1{
+            background-color: rgb(230, 175, 230);
+            text-transform: uppercase;
+            height: 627px;
+            width: 100%;
+            padding-top: 10px;
+
+        }
+        #div2{
+            margin-top: -15px;
+            margin-left: 430px;
+            margin-right: 50px;
+            background-color: rgb(226, 228, 224);
+            width: 500px;
+            height: 215px;
+        }
+        #divv{
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 50px;
+            background-color: rgb(226, 228, 224);
+            display: inline-flex;
+            font-weight: lighter;
+            font-family: 'Times New Roman', Times, serif;
+            width: 100%;
+            height: 50px;
+        }
+        #divvv{
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 50px;
+            background-color: rgb(226, 228, 224);
+            display: inline-flex;
+            font-weight: lighter;
+            font-family: 'Times New Roman', Times, serif;
+            width: 100%;
+            height: 100px;
+            padding-top: 15px;
+        }
+        #h1{
+            color: rgb(9, 9, 160);
+        }
+        #h4{
+            color: rgb(151, 33, 98);
+            padding-left: 430px;
+        }
+        #acid{
+            padding-left: 10px;
+        }
+        #neu{
+            padding-left: 165px;
+
+        }
+        #alk{
+            padding-left: 130px;
+        }
+        #div3{
+            background-color: rgb(240, 6, 6);
+            height: 55px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 10px;
+            margin-top: 21px;
+        }
+        #div4{
+            background-color: rgb(245, 26, 26);
+            height: 60px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 18px;
+        }
+        #div5{
+            background-color: rgb(245, 42, 42);
+            height: 65px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 15px;
+        }
+        #div6{
+            background-color: rgb(240, 66, 66);
+            height: 70px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 12px;
+        }
+        #div7{
+            background-color: rgb(240, 98, 98);
+            height: 75px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 9px;  
+        }
+        #div8{
+            background-color: rgb(241, 127, 127);
+            height: 80px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 6px;
+        }
+        #div9{
+            background-color: rgb(230, 166, 166);
+            height: 85px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 3px;
+        }
+        #div10{
+            background-color: rgb(226, 206, 164);
+            height: 90px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+        }
+        #div11{
+            background-color: rgb(178, 199, 230);
+            height: 85px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 3px;
+        }
+        #div12{
+            background-color: rgb(123, 192, 224);
+            height: 80px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 6px;
+        }
+        #div13{
+            background-color: rgb(101, 184, 223);
+            height: 75px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 9px;
+        }
+        #div14{
+            background-color: rgb(77, 176, 221);
+            height: 70px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 12px;
+        }
+        #div15{
+            background-color: rgb(50, 168, 223);
+            height: 65px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 15px;
+        }
+        #div16{
+            background-color: rgb(20, 160, 224);
+            height: 60px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 18px;
+        }
+        #div17{
+            background-color: rgb(10, 166, 228);
+            height: 55px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 21px;
+        }
+        #numbers{
+            background-color: rgb(226, 228, 224);
+            height: 50px;
+            width: 100%;
+            display: inline-flex;
+        }
+        #num1{
+            word-spacing: 20px;
+            text-align: left;
+            padding-left: 20px;
+        }
+        #num2{
+            padding-left: 22px;
+            word-spacing: 12px;
+        }
+
+        #divv3{
+            background-color: #ef0606;
+            height: 55px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 10px;
+            margin-top: 21px;
+        }
+        #divv4{
+            background-color: #f51a1a;
+            height: 60px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 18px;
+        }
+        #divv5{
+            background-color: #f52a2a;
+            height: 65px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 15px;
+        }
+        #divv6{
+            background-color: #f04242;
+            height: 70px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 12px;
+        }
+        #divv7{
+            background-color: #f06262;
+            height: 75px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 9px;  
+        }
+        #divv8{
+            background-color: #f17f7f;
+            height: 80px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 6px;
+        }
+        #divv9{
+            background-color: #e6a6a6;
+            height: 85px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 3px;
+        }
+        #divv10{
+            background-color: #e2cea4;
+            height: 90px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+        }
+        #divv11{
+            background-color: #b2c7e6;
+            height: 85px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 3px;
+        }
+        #divv12{
+            background-color: #7bc0e0;
+            height: 80px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 6px;
+        }
+        #divv13{
+            background-color: #65b8df;
+            height: 75px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 9px;
+        }
+        #divv14{
+            background-color: #4db0dd;
+            height: 70px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 12px;
+        }
+        #divv15{
+            background-color: #32a8df;
+            height: 65px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 15px;
+        }
+        #divv16{
+            background-color: #14a0e0;
+            height: 60px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 18px;
+        }
+        #divv17{
+            background-color: #0aa6e4;
+            height: 55px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 2px;
+            margin-top: 21px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h1 align="center" id="h1">css colors</h1>
+        <h4 id="h4">ph scale using rgb values</h4>
+        <div id="div2">
+            <div id="divv">
+            <h5 id="acid">Acidic</h5>
+            <h5 id="neu" align="center">Neutral</h5>
+            <h5 id="alk">Alkaline</h5>
+        </div>
+        <div id="divvv">
+            <div id="div3"></div>
+            <div id="div4"></div>
+            <div id="div5"></div>
+            <div id="div6"></div>
+            <div id="div7"></div>
+            <div id="div8"></div>
+            <div id="div9"></div>
+            <div id="div10"></div>
+            <div id="div11"></div>
+            <div id="div12"></div>
+            <div id="div13"></div>
+            <div id="div14"></div>
+            <div id="div15"></div>
+            <div id="div16"></div>
+            <div id="div17"></div>
+        </div>
+        <div id="numbers">
+            <p id="num1">0  1  2  3  4  5  6  7  8  9</p>
+            <p id="num2">10 11 12 13 14</p>
+        </div>
+        </div>
+        <h4 id="h4">ph scale using hex values</h4>
+        <div id="div2">
+            <div id="divv">
+            <h5 id="acid">Acidic</h5>
+            <h5 id="neu" align="center">Neutral</h5>
+            <h5 id="alk">Alkaline</h5>
+        </div>
+        <div id="divvv">
+            <div id="divv3"></div>
+            <div id="divv4"></div>
+            <div id="divv5"></div>
+            <div id="divv6"></div>
+            <div id="divv7"></div>
+            <div id="divv8"></div>
+            <div id="divv9"></div>
+            <div id="divv10"></div>
+            <div id="divv11"></div>
+            <div id="divv12"></div>
+            <div id="divv13"></div>
+            <div id="divv14"></div>
+            <div id="divv15"></div>
+            <div id="divv16"></div>
+            <div id="divv17"></div>
+        </div>
+        <div id="numbers">
+            <p id="num1">0  1  2  3  4  5  6  7  8  9</p>
+            <p id="num2">10 11 12 13 14</p>
+        </div>
+        </div>
+    </div>   
+</html>
